@@ -3,102 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoIntegrador</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="Imagenes/cartas.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bowlby+One&family=Rubik+Storm&display=swap" rel="stylesheet">
+    <title>Mi Proyecto Web</title>
 </head>
 <body>
-    <header>
-        <h1>Juego Solitario</h1>
-        <br><br>
-        <img src="./Imagenes/WhatsApp Image 2026-04-08 at 15.30.46.jpeg" alt="" width="250">
-        <p>CantAutor</p>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#que es el solitario">Que es el solitario</a></li>
-                <li><a href="#guia">Guia de Descarga</a></li>
-                <li><a href="#descarga">Donde Descargar</a></li>
-                <li><a href="#tutorial">Tutorial para jugar al solitario</a></li>
-                <li><a href="#registrate para jugar">Registrarse para jugar</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="inicio">
-        <h2>Que es el Solitario?</h2>
-        <p>El solitario, la paciencia o el solitario de cartas se refieren a un género
-            <br>
-            de juegos de cartas cuyo objetivo común es ordenar las cartas de forma sistemática o,
-            <br>
-            en algunos casos, emparejarlas para descartarlas.</p>
-            <br>
-        </article>
-        <aside>
-            <h3>Datos Curiosos</h3>
-            <p>El solitario, originado en el siglo XVIII o XIX en Europa 
-                <br>
-                (posiblemente Escandinavia o Alemania), fue diseñado no solo
-                <br>
-                para entretener, sino también para la adivinación. Popularizado 
-                <br>
-                por la aristocracia, su versión más famosa, Klondike, llegó a Windows
-                <br>
-                para enseñar a los usuarios a usar el ratón, específicamente
-                <br>
-                el arrastrar y soltar.</p>
-        </aside>
-        <section id="que es el solitario">
-            <h2>Informacion</h2>
-            <p>- El solitario (o Klondike) es un juego de cartas clásico para un solo jugador,
-                <br>
-            cuyo objetivo es organizar una baraja de 52 cartas en cuatro pilas ordenadas por
-            <br>
-            palo (ascendente desde el As). Se juega distribuyendo cartas en siete columnas,
-            <br>
-            alternando colores (rojo/negro) en orden descendente para liberar cartas ocultas.</p>
-        </section>
-        <section id="guia">
-            <h2>Guía de Descarga</h2>
-            <p>Windows (PC):
-                <br><br>
-                1. Abre la Microsoft Store desde tu menú de inicio.
-                <br><br>
-                2. Busca "Microsoft Solitaire Collection".
-                <br><br>
-                3. Haz clic en "Instalar".
-                <br><br>
-            </p>
 
-        </section>
-        <section id="descarga">
-            <h2>Donde Descargar</h2>
-            <p>Link Para Descargar:
-                <a href="https://apps.microsoft.com/detail/9WZDNCRFJ3TT?hl=es&gl=AR&ocid=pdpshare">Descargar app</a>
-            </p><br>
-        </section>
-        <section id="tutorial">
-            <h3>Tutorial para jugar al solitario</h3>
-            <iframe width="1013" height="570" src="https://www.youtube.com/embed/aMiYb1Fjjw0" title="Cómo Jugar al Solitario: Reglas y Estrategias" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-        </section>
-        <section id="registrate para jugar">
-            <h2>Registrarse para jugar</h2>
-            <form action="">
-                <label>Nombre:</label><br>
-                <input type="text" required><br>
-                <label>Email:</label><br>
-                <input type="email" required><br>
-                <label>Mensaje:</label><br>
-                <textarea name="mensaje" rows="4" cols="15" placeholder="Deje su Mensaje.."></textarea><br>
-                <input type="submit" value="Enviar">
-            </form>
-                
-        </section>
-        <br><br>
-    </main>
-    <footer>
-        <p>Síguenos en <a href="https://www.instagram.com/solitario.game" target="_blank">Instagram (@Solitario.Game)</a></p>
-        <p>Contáctanos: <a href="mailto:Solitario.Game@gmail.com">Solitario.Game@gmail.com</a></p>
-    </footer>
-    
+<header>
+    <div class="logo">Guía de como jugar al Solitario</div>
+    <label for="menu" class="menu-icon">ⲷ</label>
+    <input type="checkbox" id="menu" class="menu">
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#guia">Guía</a></li>
+            <li><a href="#reglas">Reglas</a></li>
+            <li><a href="#estrategias">Estrategias</a></li>
+            <li><a href="#datos">Datos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+</header>
+<img class="imagen" src="Imagenes/solitario.jpg" alt="Solitario" width="390">
+<main>
+<article id="inicio">
+<h2 class="inicio">Juego del Solitario</h2>
+<p class="texto">
+El Solitario es un juego de cartas para un solo jugador que utiliza una baraja de 52 cartas. El objetivo es ordenar todas las cartas por palo, comenzando por el As y terminando con el Rey.
+</p>
+
+</article>
+
+<aside>
+
+<br>
+
+<h3 class="principios">Conceptos Básicos</h3>
+
+<p class="texto2">
+Baraja: Se utilizan 52 cartas sin comodines.
+</p>
+
+<p class="texto3">
+Columnas: Las cartas se distribuyen en siete columnas con diferente cantidad de cartas.
+</p>
+
+<p class="texto4">
+Mazo: Las cartas restantes quedan para ser utilizadas durante la partida.
+</p>
+
+</aside>
+
+<br><br>
+
+<section id="guia">
+
+<h2 class="guia">Guía para Jugar</h2>
+
+<p class="texto5">
+1. Observa todas las cartas visibles.
+</p>
+
+<p class="texto6">
+2. Ordena las cartas alternando colores.
+</p>
+
+<p class="texto7">
+3. Descubre cartas ocultas siempre que puedas.
+</p>
+
+<p class="texto8">
+4. Completa las cuatro pilas finales desde el As hasta el Rey.
+</p>
+
+</section>
+
+<br><br>
+
+<section id="reglas">
+
+<h2 class="tipos">Reglas del Juego</h2>
+
+<p class="texto9">
+Solo un Rey puede ocupar un espacio vacío.
+</p>
+
+<p class="texto10">
+Las columnas deben ordenarse de mayor a menor.
+</p>
+
+<p class="texto11">
+Los colores siempre deben alternarse entre rojo y negro.
+</p>
+
+<p class="texto12">
+Las pilas finales se forman por palo y en orden ascendente.
+</p>
+
+</section>
+
+<br>
+
+<iframe width="901"
+height="507"
+src="https://www.youtube.com/embed/46PyQ4X2P_A"
+title="Cómo jugar al Solitario"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<section id="estrategias">
+
+<h3 class="tecnicas">Estrategias Básicas</h3>
+
+<p class="texto13">
+Descubre primero las cartas ocultas.
+</p>
+
+<p class="texto14">
+No envíes todas las cartas rápidamente a las pilas finales.
+</p>
+
+<p class="texto15">
+Aprovecha los espacios vacíos para mover Reyes.
+</p>
+
+<p class="texto16">
+Piensa varios movimientos antes de sacar una carta nueva.
+</p>
+
+</section>
+
+<section id="datos">
+
+<h2 class="estadisticas">Datos del Juego</h2>
+
+<table border="1">
+
+<tr>
+<th>Cartas</th>
+<td>52</td>
+</tr>
+
+<tr>
+<th>Columnas</th>
+<td>7</td>
+</tr>
+
+<tr>
+<th>Pilas Finales</th>
+<td>4</td>
+</tr>
+
+<tr>
+<th>Jugadores</th>
+<td>1</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="contacto">
+
+<h2 class="contacto">Contacto</h2>
+
+<form>
+
+<label class="texto17">Nombre:</label><br>
+<input type="text" required><br>
+
+<label class="texto18">Email:</label><br>
+<input type="email" required><br>
+
+<label>Mensaje:</label><br>
+
+<textarea rows="4" cols="15" placeholder="Deje su mensaje..."></textarea><br>
+
+<button type="submit" class="boton boton-primario">
+Enviar
+</button>
+
+</form>
+
+</section>
+
+<section class="botones-demo">
+
+<h2>Opciones del Juego</h2>
+
+<div class="contenedor-botones">
+
+<button class="boton boton-primario">
+Nueva Partida
+</button>
+
+<button class="boton boton-secundario">
+Mover Carta
+</button>
+
+<button class="boton boton-exito">
+Mostrar Pista
+</button>
+
+<button class="boton boton-peligro">
+Reiniciar Juego
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>
+Instagram:
+<a href="https://www.instagram.com">
+@solitario_web
+</a>
+</p>
+<p>
+Email:
+<a href="mailto:solitario@gmail.com">
+solitario21@gmail.com
+</a>
+</p>
+</footer>
+
 </body>
 </html>
